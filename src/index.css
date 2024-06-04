@@ -1,0 +1,36 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header {
+  @apply flex p-4 bg-green-500 text-white shadow-md;
+}
+
+.logo {
+  @apply h-24 mb-2; /* Tinggi logo dan margin bawah */
+}
+
+.shop-name {
+  @apply text-3xl font-bold;
+}
+
+.fruit-list {
+  @apply p-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3;
+}
+
+.fruit-item {
+  @apply p-4 border rounded-lg shadow-lg bg-white flex flex-col items-center text-center;
+}
+
+.fruit-item h2 {
+  @apply text-xl font-bold mb-2 text-gray-700;
+}
+
+.fruit-item p {
+  @apply mb-1 text-gray-600;
+}
+
+.fruit-item button {
+  @apply bg-blue-500 text-white py-2 px-4 rounded mt-2 hover:bg-blue-700 flex items-center justify-center gap-2;
+}
